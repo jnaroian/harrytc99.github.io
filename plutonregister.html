@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pluton - Building a Seamless Future</title>
+<style>
+    body, html {
+        height: 100%;
+        margin: 0;
+        font-family: Arial, sans-serif;
+    }
+
+    .header {
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .header a {
+        color: white;
+        text-decoration: none;
+        margin-right: 20px;
+    }
+
+    .bg-image {
+        background-image: url('website_background.jpg');
+        height: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .title {
+        color: white;
+        font-size: 4em;
+        margin: 0;
+    }
+
+    .tagline {
+        color: white;
+        font-size: 1.5em;
+        margin: 20px 0;
+    }
+
+    .waitlist-form {
+        margin: 20px 0;
+    }
+
+    .waitlist-input {
+        padding: 10px;
+        width: 300px;
+        margin-right: 10px;
+        border: none;
+        border-radius: 5px;
+    }
+
+    .waitlist-button {
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        background-color: white;
+        cursor: pointer;
+    }
+</style>
+</head>
+<body>
+    <div class="header">
+        <a href="http://jacobn.sgedu.site/Pluton/plutonlogin.html">Log In</a>
+        <a href="http://jacobn.sgedu.site/Pluton/index.html">Register</a>
+    </div>
+
+<div class="bg-image">
+    <h1 class="title">Generate Passkey</h1>
+    <p class="tagline">Enter your username below to generate a passkey</p>
+    <form action="generate_passkey.php" method="post" class="username-form">
+        <input type="text" name="username" placeholder="Enter your username" class="username-input">
+        <button type="submit" class="passkey-button">Generate Passkey</button>
+    </form>
+</div>
+
+</body>
+</html>
